@@ -1,25 +1,213 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono&family=Silkscreen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=IBM+Plex+Mono&family=Josefin+Sans&family=Silkscreen&display=swap');
-* {
-  margin: 0px;
-  padding: 10px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: large;
-  font-weight: bold;
-  text-transform: uppercase;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --blue: #287bff;
+    --white: #fff;
+    --black1: #222;
+    --grey: #f5f5f5;
+    --black2: #999;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: var(--black1);
+    border-left: 10px solid var(--black1);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation.active{
+    width: 80px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation li a .title h2{
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style:none ;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+.navigation ul li:hover,
+.navigation ul li.hovered{
+    background: var(--white);
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px ;
+    pointer-events: none;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    font-family: 'IBM Plex Mono', monospace;
+    text-decoration: none;
+    color: var(--white);
+}
+.navigation ul li:hover a,
+.navigation ul li.hovered a{
+    color: var(--blue);
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 80px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+    font-size: 1.75em;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    height: 50px;
+    background: transparent;
+    pointer-events: none;
+}
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    height: 50px;
+    background: transparent;
+    pointer-events: none;
+}
+
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 80px);
+    left: 80px;
 }
 
 
-.Title1{
-  margin-top: 10vh;
-  color: white;
-  border: solid black;
-  background-color: #287bff;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  width: 20%;
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
 }
+.topbar .pageHeading{
+    font-family: 'IBM Plex Mono', monospace;
+}
+.toggle{
+    position: relative;
+    top: 0;
+    width: 60px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+.search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;    
+
+}
+.search label{
+    position: relative;
+    width: 100%;
+}
+.search label ion-icon{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2em;
+    
+
+}.search label input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    outline: none;
+    font-size: 18px;
+    padding-left: 35px;
+    border: 1px solid var(--black2);
+}
+.user {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.user img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* FROM INDEX.HTML */
+
 
 .dropdownContent button{
   color: black;
@@ -32,23 +220,25 @@
   
 }
 .dropdownContent button:hover{
-  color: blueviolet;
+  color: #287bff;
   background-color: black;
+  border: solid var(--black2);
 }
 #array_container{
 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
-  margin-top: 15vh;
+  height: 100vh;
+  margin-top:-10vh;
+  width: 60%;
+  margin-left: 30vw;
 }
 
 .DropBox{
   display: flex;
-}
-.DropDown{
-  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-top: 10vh;
 }
 
 .DropDown span{
@@ -72,40 +262,75 @@
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--black1);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.8);
   padding: 12px 16px;
   z-index: 1;
 }
 
-nav .array-inputs {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
-  place-content: center;
-  padding: 5% 0%;
+
+.array-inputs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+    grid-template-columns: 30% 40%;
+    place-content: center;
+    padding: 5% 0%;
+    margin-left: 21vw;
+    margin-top: -70vh;
+    color: #f5f5f5;
+    /* background-color: #287bff; */
+    
+  }
+  .array-inputs p{
+  background-color: var(--black1);
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 17px;
+}
+.array-inputs input{
+  background-color: var(--black1);
+  border-radius: 15px;
+}
+.bars{
+  display: contents;
 }
 
-nav .array-inputs #a_size {
+.array-inputs #a_size {
+  background-color: var(--black1);
+  border-radius: 15px;
   padding: 5% 0%;
+  width: 50%;
+}
+.generate{
+  background: var(--blue);
+  border: #222 solid;
+  color: var(--grey);
+  border-radius: 15px;
+  padding: 12px;
+  margin-left: 10vw;
+  cursor: pointer;
+
+}
+.array-inputs #a_speed {
+  background-color: var(--black1);
+  border-radius: 15px;
+  padding: 5% 0%;
+  width: 50%;
 }
 
-nav .array-inputs #a_speed {
-  padding: 5% 0%;
-}
-
-nav .array-inputs #a_generate {
+.array-inputs #a_generate {
   background-color: transparent;
   border: none;
   outline: none;
-  color: white;
+  color:var(--black1);
   padding: 4% 0% 0% 0%;
   padding-left: 20%;
 }
 
-nav .array-inputs #a_generate:hover {
+.array-inputs #a_generate:hover {
   cursor: pointer;
 }
 
@@ -128,10 +353,10 @@ nav .header_right .nav-heading {
 nav .header_right .dropdownContent {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (16.66667%)[6];
-      grid-template-columns: repeat(6, 16.66667%);
-  place-content: center;
-  padding: 2% 0%;
+    -ms-grid-columns: (16.66667%)[6];
+        grid-template-columns: repeat(6, 16.66667%);
+        place-content: center;
+    padding: 2% 0%;
 }
 
 nav .header_right .dropdownContent button {
@@ -171,28 +396,30 @@ nav .header_right .dropdownContent .butt_unselected:hover {
   cursor: pointer;
 }
 
-section {
+.section {
   background: #287bff;
   border-radius: 15px;
   display: -ms-grid;
-  color: aliceblue;
   color: black;
   display: grid;
   -ms-grid-columns: 20% 60% 20%;
       grid-template-columns: 20% 60% 20%;
+  margin-bottom: 10vh;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-section .Complexity_Containers {
+.section .Complexity_Containers {
   margin-top: 0%;
-  background-color: #1b54b08e;
+  /* background-color: #1b54b08e; */
   border-radius: 15px;
 }
 
-section .Complexity_Containers .Pair_Definitions {
+.section .Complexity_Containers .Pair_Definitions {
   margin-top: 10%;
 }
 
-section .Complexity_Containers .Pair_Definitions p {
+.section .Complexity_Containers .Pair_Definitions p {
   display: inline;
   color: white;
   text-shadow:2px 2px black;
@@ -200,26 +427,26 @@ section .Complexity_Containers .Pair_Definitions p {
   font-size: 15px;
 }
 
-section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+.section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
   font-size: medium;
   text-transform: none;
   font-size: unset;
 }
 
 
-section #Info_Cont1 {
+.section #Info_Cont1 {
   padding: 20% 10%;
   width: 30vw;
 }
 
-section #Info_Cont1 h3 {
+.section #Info_Cont1 h3 {
   /* text-decoration: underline; */
   font-weight: bolder;
   font-family: 'Acme', sans-serif;
   font-size: larger;
 }
 
-section #array_container {
+.section #array_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,12 +454,12 @@ section #array_container {
   height: 70vh;
 }
 
-section #Info_Cont2 {
+.section #Info_Cont2 {
   padding: 20% 10%;
   margin-left: -15vw;
 }
 
-section #Info_Cont2 h3 {
+.section #Info_Cont2 h3 {
   /* text-decoration: underline; */
   font-weight: bolder;
   font-family: 'Acme', sans-serif;
@@ -243,25 +470,4 @@ section #Info_Cont2 h3 {
   display: none;
 }
 
-/*
-@media (max-width: 480px)//Mobiles
-{
-    
-}
 
-@media (min-width: 481px) and (max-width: 1250px)//Tablets
-{
-
-}
-
-@media (min-width: 1251px)//Laptops and up
-{
-
-}
-*/
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    *****************
-*/
-/*# sourceMappingURL=style.css.map */
