@@ -44,12 +44,12 @@ function div_update(cont,height,color)
 function enable_buttons()
 {
     window.setTimeout(function(){
-        for(var i=0;i<butts_algos.length;i++)
+        for(var i=0;i<butts_dropdownContent.length;i++)
         {
-            butts_algos[i].classList=[];
-            butts_algos[i].classList.add("butt_unselected");
+            butts_dropdownContent[i].classList=[];
+            butts_dropdownContent[i].classList.add("butt_unselected");
 
-            butts_algos[i].disabled=false;
+            butts_dropdownContent[i].disabled=false;
             inp_as.disabled=false;
             inp_gen.disabled=false;
             inp_aspeed.disabled=false;
