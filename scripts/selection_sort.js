@@ -16,6 +16,7 @@ function Selection_sort()
     document.getElementById("Space_Worst").innerText="O(1)";
 
     c_delay=0;
+    
 
     for(var i=0;i<array_size-1;i++)
     {
@@ -52,9 +53,9 @@ function Selection_sort()
             div_update(divs[i],div_sizes[i],"red");//Height update
             div_update(divs[index_min],div_sizes[index_min],"blue");//Color update
         }
-        div_update(divs[i],div_sizes[i],"green");//Color update
+        div_update(divs[i],div_sizes[i]," rgb(117, 222, 13)");//Color update
     }
-    div_update(divs[i],div_sizes[i],"green");//Color update
+    div_update(divs[i],div_sizes[i]," rgb(117, 222, 13)");//Color update
 
     enable_buttons();
 }

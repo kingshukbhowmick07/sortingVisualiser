@@ -60,6 +60,7 @@
                             </span>
                         </a>
                     </li>
+                    <img src="/images/kTMKaG9Tj.gif" alt="">
 
 
                 </ul>
@@ -75,108 +76,115 @@
                 <ion-icon name="menu"></ion-icon>
             </div>
 
-            <div class="pageHeading">
-                <h2>
-                    Sorting-Visualiser
-                </h2>
-            </div>
+            <div class="HeaderCombined">
 
-            <!-- /*search*/ -->
-            <div class="search">
-                <label for="">
-                    <input type="text" placeholder="Search Here">
-                    <ion-icon name="search"></ion-icon>
-                </label>
+                <img src="/images/f88acab7ffd127b4465659500aa0538f.gif" alt="">
+                <div class="pageHeading">
+                    <h2>
+                        Sorting
+                        <span>
+                            -Visualiser
+                        </span>
+                    </h2>
+                </div>
+    
+                <!-- /*search*/ -->
+                <!-- <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Search Here">
+                        <ion-icon name="search"></ion-icon>
+                    </label>
+                </div> -->
+                
+
             </div>
         </div>   
             <!-- topbar_End -->
-
-            <div class="DropBox">
-
-                <div class="DropDown">
-                  <span>
-                    <h4>
-                        SELECT SORT
-                    </h4>
-                  </span>
-                    <div class="dropdownContent">
-                      
-                        <button>Bubble</button>
-                        <button>Selection</button>
-                        <button>Insertion</button>
-                        <button>Merge</button>
-                        <button>Quick</button>
-                        <button style="margin-right: 0px">Heap</button>
+            <div class="ContainerTwo">    
+                <div class="DropBox">
+                    <div class="DropDown">
+                        <span>
+                            <h4>
+                                SELECT SORT
+                            </h4>
+                        </span>
+                        <div class="dropdownContent">
+                            
+                            <button>Bubble</button>
+                            <button>Selection</button>
+                            <button>Insertion</button>
+                            <button>Merge</button>
+                            <button>Quick</button>
+                            <button style="margin-right: 0px">Heap</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-                    <div class="bars">
-                        <button class="generate"id="a_generate">Generate New Array!</button>
-                        <div id="array_container"></div>
-                    </div>
-
-                    <div class="array-inputs">
-                        <p>Size of the array:</p>
-                        <input
-                        id="a_size"
-                        type="range"
-                        min="20"
-                        max="50"
-                        step="1"
-                        value="80"
-                        />
-                        <p>Speed of the algorithm:</p>
-                        <input id="a_speed" type="range" min="1" max="5" step="1" value="4" /><br>
-                    </div>
+                <div class="bars">
+                    <button class="generate"id="a_generate">Generate New Array!</button>
                     
-            
-                    <div class="section">
-                        <div id="Info_Cont1" class="infoContainer">
-                            <h3>TIME COMPLEXITY</h3>
-                            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
-                                <div class="Pair_Definitions">
-                                  <p class="Sub_Heading">Worst case:</p>
-                                  <p id="Time_Worst"></p>
-                                </div>
+                    <div id="array_container"></div>
+                </div>
                 
-                                <div class="Pair_Definitions">
-                                    <p class="Sub_Heading">Average case:</p>
-                                    <p id="Time_Average"></p>
-                                </div>
-                    
-                                <div class="Pair_Definitions">
-                                    <p class="Sub_Heading">Best case:</p>
-                                    <p id="Time_Best"></p>
-                                </div>
-                            </div>
+                <div class="array-inputs">
+                    <p>Size of the array:</p>
+                    <input
+                    id="a_size"
+                            type="range"
+                            min="20"
+                            max="50"
+                            step="1"
+                            value="80"
+                            />
+                            <p>Speed of the algorithm:</p>
+                            <input id="a_speed" type="range" min="1" max="5" step="1" value="4" /><br>
                         </div>
+                        
+                
+                        <div class="section">
+                            <div id="Info_Cont1" class="infoContainer">
+                                <h3>TIME COMPLEXITY</h3>
+                                <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+                                    <div class="Pair_Definitions">
+                                      <p class="Sub_Heading">Worst case:</p>
+                                      <p id="Time_Worst"></p>
+                                    </div>
                     
-                            <div class="arrayContainer">
-                                <div class="ArrayHeader">
-                                <div class="Head">
-                                    <!-- <h3>TITLE</h3> -->
-                                </div>
+                                    <div class="Pair_Definitions">
+                                        <p class="Sub_Heading">Average case:</p>
+                                        <p id="Time_Average"></p>
+                                    </div>
+                        
+                                    <div class="Pair_Definitions">
+                                        <p class="Sub_Heading">Best case:</p>
+                                        <p id="Time_Best"></p>
+                                    </div>
                                 </div>
                             </div>
                         
-                            <div id="Info_Cont2">
-                                <h3>SPACE COMPLEXITY</h3>
-                        
-                                <div
-                                class="Complexity_Containers"
-                                id="Space_Complexity_Types_Container"
-                                >
-                                    <div class="Pair_Definitions">
-                                        <p class="Sub_Heading">Worst case:</p>
-                                        <p id="Space_Worst"></p>
+                                <div class="arrayContainer">
+                                    <div class="ArrayHeader">
+                                    <div class="Head">
+                                        <!-- <h3>TITLE</h3> -->
+                                    </div>
+                                    </div>
+                                </div>
+                            
+                                <div id="Info_Cont2">
+                                    <h3>SPACE COMPLEXITY</h3>
+                            
+                                    <div
+                                    class="Complexity_Containers"
+                                    id="Space_Complexity_Types_Container"
+                                    >
+                                        <div class="Pair_Definitions">
+                                            <p class="Sub_Heading">Worst case:</p>
+                                            <p id="Space_Worst"></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                
-            
-    </div>
+            </div>
 
     
 

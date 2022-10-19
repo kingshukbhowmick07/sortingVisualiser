@@ -63,7 +63,7 @@ function quick_partition (start, end)
 
     for(var t=start;t<=i;t++)
     {
-        div_update(divs[t],div_sizes[t],"green");//Color update
+        div_update(divs[t],div_sizes[t],"blueviolet");//Color update
     }
 
     return i-1;//return the position of the pivot

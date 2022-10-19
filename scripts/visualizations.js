@@ -37,7 +37,7 @@ var c_delay=0;//This is updated ov every div change so that visualization is vis
 function div_update(cont,height,color)
 {
     window.setTimeout(function(){
-        cont.style=" margin:0% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
+        cont.style=" margin:0% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + "; border-radius:4px;box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.8);";
     },c_delay+=delay_time);
 }
 
@@ -56,10 +56,3 @@ function enable_buttons()
         }
     },c_delay+=delay_time);
 }
-
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    
-    *****************
-*/

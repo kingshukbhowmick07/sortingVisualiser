@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=IBM+Plex+Mono&family=Josefin+Sans&family=Righteous&family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono&family=Silkscreen&display=swap');
 
 *{
@@ -122,6 +122,9 @@ body{
     background: transparent;
     pointer-events: none;
 }
+.navigation ul img{
+  height: 37vh;
+}
 
 .main{
     position: absolute;
@@ -144,14 +147,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    
+  }
 
-}
-.topbar .pageHeading{
-    font-family: 'IBM Plex Mono', monospace;
-}
 .toggle{
-    position: relative;
-    top: 0;
+  position: relative;
+  top: 0;
     width: 60px;
     height:60px;
     display: flex;
@@ -159,6 +160,36 @@ body{
     font-size: 2.5rem;
     cursor: pointer;
     align-items: center;
+  }
+  .HeaderCombined{
+   
+    margin-right: 3vw;
+    display: flex;
+    position: relative;
+    background: linear-gradient(90deg, rgb(37, 36, 37) 0%, rgb(16, 16, 16) 35%, rgb(0, 145, 255) 100%);;
+    width: 100%;
+    height: 15vh;
+    border-radius: 10px;
+    margin-top: 12vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+  }
+.HeaderCombined .pageHeading {
+  text-align: center;
+  padding-left: 25%;
+  padding-top: 40px;
+  color: var(--grey);
+  text-shadow:5px 5px black;
+  font-family: 'Righteous', cursive;
+
+}
+.HeaderCombined span{
+  font-family: 'Lobster Two', cursive;
+  color: #287bff;
+}
+.HeaderCombined img{
+  border-radius: 10px;
 }
 .search{
     position: relative;
@@ -205,6 +236,25 @@ body{
     object-fit: cover;
 }
 
+/* CONTAINERTWO */
+.ContainerTwo{
+  position: relative;
+  /* background: linear-gradient(90deg, rgb(37, 36, 37) 0%, rgb(16, 16, 16) 35%, rgb(0, 145, 255) 100%); */
+  /* height: 45vh; */
+  border-radius: 10px;
+  /* margin-right: 100px; */
+  margin-left: 4.25vw;
+  margin-top: 12vh;
+  background: url("/images/ios-13-stock-dark-green-black-background-amoled-ipad-hd-3208x3208-791.jpg");
+  width: 90%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 /* FROM INDEX.HTML */
 
@@ -220,9 +270,10 @@ body{
   
 }
 .dropdownContent button:hover{
-  color: #287bff;
-  background-color: black;
+  /* color: #287bff;
+  background-color: black; */
   border: solid var(--black2);
+  font-weight: bolder;
 }
 #array_container{
 
@@ -232,7 +283,7 @@ body{
   height: 100vh;
   margin-top:-10vh;
   width: 60%;
-  margin-left: 30vw;
+  margin-left: 25vw;
 }
 
 .DropBox{
@@ -270,6 +321,36 @@ body{
   z-index: 1;
 }
 
+.dropdownContent button:nth-child(2):hover{
+  background-color:  rgb(117, 222, 13);
+  border: solid var(--black1);
+}
+
+.dropdownContent button:nth-child(3):hover{
+  background-color:  rgb(94, 28, 44);
+  border: solid var(--black1);
+  color: white;
+}
+
+.dropdownContent button:nth-child(4):hover{
+  background-color:  rgb(33, 169, 203);
+  border: solid var(--black1);
+  color: black;
+}
+
+.dropdownContent button:nth-child(5):hover{
+  background-color: blueviolet;
+  border: solid var(--black1);
+  color: black;
+}
+
+.dropdownContent button:nth-child(6):hover{
+  background-color: rgb(179, 188, 11);
+  border: solid var(--black1);
+  color: black;
+}
+
+
 
 .array-inputs {
     display: -ms-grid;
@@ -289,15 +370,13 @@ body{
   border-radius: 15px;
   padding: 10px;
   padding-top: 17px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px 4px whitesmoke;
 }
 .array-inputs input{
   background-color: var(--black1);
   border-radius: 15px;
 }
-.bars{
-  display: contents;
-}
-
 .array-inputs #a_size {
   background-color: var(--black1);
   border-radius: 15px;
@@ -310,7 +389,8 @@ body{
   color: var(--grey);
   border-radius: 15px;
   padding: 12px;
-  margin-left: 10vw;
+  margin-left: -42vw;
+  margin-top: 10px;
   cursor: pointer;
 
 }
@@ -403,20 +483,24 @@ nav .header_right .dropdownContent .butt_unselected:hover {
   color: black;
   display: grid;
   -ms-grid-columns: 20% 60% 20%;
-      grid-template-columns: 20% 60% 20%;
-  margin-bottom: 10vh;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.section .Complexity_Containers {
-  margin-top: 0%;
-  /* background-color: #1b54b08e; */
-  border-radius: 15px;
-}
-
-.section .Complexity_Containers .Pair_Definitions {
-  margin-top: 10%;
+      grid-template-columns: 20% 55% 20%;
+      margin-left: 40px;
+      margin-right: 40px;
+      box-shadow:20px 10px 40px 10px #222;
+    }
+    
+    .section .Complexity_Containers {
+      margin-top: 10%;
+      background-color: #1b54b08e;
+      border-radius: 15px;
+    }
+    
+    .section .Complexity_Containers .Pair_Definitions {
+      margin-top: 10%;
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 10px;
 }
 
 .section .Complexity_Containers .Pair_Definitions p {
