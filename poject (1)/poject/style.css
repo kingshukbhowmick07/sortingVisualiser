@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(10, 10, 93);
+    padding: 60px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    column-gap: 50px;
+    
+}
+.layout-left{
+    background-color: rgb(133, 133, 203);
+    height: 550px;
+    border: 1px;
+    border-radius: 29px;
+}
+.layout-right{
+    background-color: rgb(14, 14, 57);
+    min-height: 550px;
+    width:800px;
+    border-radius: 29px;
+}
+
+.scrollbar{
+    width: 800px;
+    height: 440px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.personar-info{
+    padding: 20px 10px;
+    text-align:left;
+    font-size:medium;
+    font:bolder;
+    color:white;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+#ip1{
+    border-radius: 18px;
+    border: 2px solid;
+    background-color: white;
+    padding: 12px;
+    width:680px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 25px;
+    font-size: large;
+}
+#ip2{
+    border-radius: 18px;
+    border: 2px solid;
+    background-color: white;
+    padding: 12px;
+    width:420px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: large;
+}
+#ip3{
+    border-radius: 18px;
+    border: 2px solid;
+    background-color: white;
+    padding: 12px;
+    width:680px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: large;
+}
+.poject{
+    padding: 20px 10px;
+    text-align:left;
+    font-size:medium;
+    font:bolder;
+    color:white;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+#p1{
+    border-radius: 18px;
+    border: 2px solid;
+    background-color: white;
+    padding: 12px;
+    width:350px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: large;
+}
+#p2{
+    border-radius: 18px;
+    border: 2px solid;
+    background-color: white;
+    padding: 12px;
+    width:480px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
+    background-color: white;
+    border: 1px solid;
+    margin-left: 29%;
+    margin-top: 60px;
+}
+.name{
+    margin-left: 33%;
+    margin-top: 10px;
+}
+.phone{
+    margin-left: 43%;
+}
+
+.media{
+    margin-left: 7%;
+    margin-top: 75px;
+    
+}
+#face{
+    padding-top: 15px;
+    padding-left: 52px;   
+}
+#email{
+    padding-left: 42px;
+}
+#link{
+    padding-left: 42px;
+}
+#github{
+    padding-left: 42px;
+}

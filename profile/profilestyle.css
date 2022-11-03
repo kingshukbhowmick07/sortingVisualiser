@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    /* scrollbar-color: black; */
+}
+body {
+    background-color:rgb(10, 10, 93);
+    padding: 60px;
+    background: url('../images/background-html-gif-11.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        column-gap: 50px;
+        
+    }
+    .layout-left{
+        background-color: rgba(133, 133, 203, 0.618);
+        /* height: 650px; */
+        border: 1px;
+        border-radius: 29px;
+        padding-bottom: 5vh;
+    }
+    .layout-right{
+        /* background-color: rgb(14, 14, 57); */
+        /* min-height: 550px; */
+        width:800px;
+        border-radius: 29px;
+        background: rgba(178, 182, 187, 0.176);
+       
+    }
+
+.layout-left .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.layout-left .name h1{
+    font-size: 27px;
+    padding-right: 12px;
+}   
+
+.layout-left .name img{
+    height: 30px;    
+}
+        .scrollbar{
+            width: 800px;
+            height: 790px;
+            overflow: hidden;
+    overflow-y: scroll;
+}
+.personar-info{
+    padding: 20px 25px;
+    /* text-align:left; */
+    font-size:medium;
+    font:bolder;
+    color:white;
+    margin-left: 25px;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.269);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    text-align: right;
+    
+}
+.personar-info h1{
+    text-shadow: 5px 0 4px black;
+    /* color: black; */
+    font-weight: bolder;
+}
+
+.poject ,
+.skills{
+    padding: 20px 25px;
+    /* text-align:left; */
+    font-size:medium;
+    font:bolder;
+    color:white;
+    margin-left: 25px;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.269);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    text-align: right;
+}
+.poject h1,
+.skills h1{
+    text-shadow: 5px 0 4px black;
+    /* color: black; */
+    font-weight: bolder;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    /* background-color: white; */
+    /* background: url(../images/7K7m.gif); */
+    border: 1px solid;
+    margin:auto;
+    margin-top: 7vh;
+
+    position: relative;
+    /* width: 60px;
+    height: 60px; */
+    /* border-radius: 50%; */
+    overflow: hidden;
+    /* cursor: pointer; */
+    /* margin-top: 15px; */
+}
+.circle img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name{
+    margin:auto;
+    text-align: center;
+    margin-top: 10px;
+}
+/* .name h1{
+    font-size: xx-large;
+} */
+.updatebtn,
+.updatebtn2{
+
+    width: 80%;
+    /* margin-bottom: 2vh; */
+}
+.updatebtn button,
+.updatebtn2 button{
+    margin-top: 5vh;
+    float: right;
+    height: 50px;
+    width: 65px;
+    /* margin-left: 10px; */
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.updatebtn button:hover,
+.updatebtn2 button:hover{
+    color: white;
+    border: solid whitesmoke;
+    background-color: black;
+}
+
+.phone{
+    text-align: center;
+}
+.phone h2{
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.aboutme{
+    /* margin-top: 10px; */
+    padding: 25px;
+}
+.aboutme p{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.media{
+    /* margin-left: 7%; */
+    margin: auto;
+    text-align: center;
+    margin-top: 3vh;
+    /* margin-bottom: 70px; */
+}
+.media a{
+    color: black;
+    font-size: 4vh;
+    text-decoration: none;
+}
+.media a:hover{
+    font-size: 5vh;
+}
+.tables{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    padding: 12px;
+    /* border-radius: 15px; */
+}
+.tables .left-table{
+    padding-right: 25px;
+    background-color: rgb(58, 118, 201);
+    padding: 25px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border: solid black;
+}
+.right-table{
+    padding: 25px;
+    background-color: aliceblue;
+    width: 100%;
+   
+}
+.tables h2{
+    font-size: 18px;
+}
+.content{
+    display: block;
+}
+.layout-right .updatebtn,
+.layout-right .updatebtn2{
+    margin-top: -5vh;
+    margin-left: 1.75vw;
+}
+.projectHead{
+    margin-top: 15vh;
+    padding: 20px 25px;
+    /* text-align:left; */
+    font-size:medium;
+    font:bolder;
+    color:white;
+    margin-left: 25px;
+    /* margin-top: 25px; */
+    background: rgba(255, 255, 255, 0.269);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    text-align: right;
+}
+.projectHead h1{
+    text-shadow: 5px 0 4px black;
+    /* color: black; */
+    font-weight: bolder;
+}
+.addproject{
+    text-align: center;
+    margin-top: 10vh;
+}
+.addproject button{
+    padding: 8px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+.addproject button:hover{
+    background-color: black;
+    color: white;
+    border-color: antiquewhite;
+    cursor: pointer;
+}
+#showitems{
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    width: 50%;
+}
+.row input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+}
+.submitbtnadd{
+    width: 54%;
+    /* margin-top: 5vh; */
+    
+}
+.submitbtnadd input{
+    background-color: rgb(112, 186, 236);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.cardbody .bar{
+    width: 40%;
+    padding: 7px;
+    border-radius: 15px;
+}
+.cardbody .btn{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px;
+    background-color: aqua;
+}
+form{
+    margin: auto;
+    justify-content: center;
+}
+form h2{
+    background-color: rgb(58, 118, 201);
+    padding: 10px;
+    width: 70%;
+    /* width: 70%; */
+    margin: auto;
+    margin-bottom: 8vh;
+    border-radius: 15px;
+}
+.table{
+    background-color: aliceblue;
+    width: 70%;
+    border-radius: 15px;
+    margin: auto;
+    
+}
+.table th{
+    border-radius: 15px;
+    background-color: rgb(58, 118, 201);
+    margin-top: 2vh;
+    padding: 2vh;
+}
+.table td{
+    border-radius: 15px;
+    text-align: left;
+    padding-left: 20px;
+}
+.table tr:nth-child(even){
+    background-color: rgb(182, 175, 175);
+    border-radius: 15px;
+}
+.stream,
+.sem,
+.roll,
+.name2,
+.mob,
+.email2,
+.sec{
+    padding-bottom: 5px;
+}
+
+/* POPUP INFO LEFT */
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height: 100vh;
+    background:radial-gradient(black,transparent);
+    z-index:1;
+    display:none;
+}
+
+.popup .content {
+    position :absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:450px;
+    /* height:220px; */
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    border-radius: 10px;
+    box-sizing:border-box;
+}
+.popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height: 30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50px;
+}
+.popup.active .overlay {
+    display:block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform:translate(-50%,-50%)scale(1);   
+}
+
+.updateform{
+    padding-top: 30px;
+    /* display: flex; */
+}
+.updateInputs{
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+}
+.updateProfile{
+    display: flex;
+    padding-top: 10px;
+
+    /* text-align: left; */
+}
+input#file {
+    margin: auto;
+}
+.updateName{
+    padding-bottom: 10px;
+    text-align: initial;
+}
+.updatePhone{
+    padding-bottom: 10px;
+    text-align: initial;
+}
+.updateAbout{
+    padding-bottom: 10px;
+    text-align: initial;
+}
+.updateName input,
+.updatePhone input{
+    width: 100%;
+    border-radius: 5px;
+}
+.updateAbout input{
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+}
+.updateform label{
+    /* background: #222; */
+    padding-right: 20px;
+    padding: 10px;
+}
+/* .popup button span .material-symbols-outlined{
+    cursor: pointer;
+} */
+
+
+/* AAVTARS */
+
+.updateaavtar h3{
+    text-align: start;
+    padding-bottom: 15px;
+}
+.aavtars{
+    display: revert;
+}
+.aavtars img{
+    width: 76px;
+    border-radius: 56px;
+    border: solid black;
+    cursor: pointer;
+}
+
+
+/* //FORM */
+form{
+    text-align: start;
+}
+.updateform input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+.updateform  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+.updateform input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+.updateform input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.btnsave{
+    margin-left: 190px;
+}
+.btnsave span{
+    cursor: pointer;
+    padding: 17px;
+    background-color: rgb(42, 196, 58);
+    border-radius: 7px;
+}
+.btnsave span:hover{
+    background-color: #ccc;
+    border: solid rgb(153, 146, 146);
+}
+/* ALERT */
+.alert1{
+    background-color: rgb(180, 38, 38);
+    /* border-radius: ; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: wheat;
+}
+  

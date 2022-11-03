@@ -1,0 +1,8 @@
+**\ To be Included inside the Profile /**
+
+ 1. Personal Info.
+ 2. Projects
+ 3. Languages and skills
+ 4. CV
+ 5. Contribution in the Project
+

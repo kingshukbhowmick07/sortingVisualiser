@@ -1,9 +1,4 @@
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    
-    *****************
-*/
+
 
 function Bubble()
 {
@@ -35,7 +30,7 @@ function Bubble()
                 div_update(divs[j],div_sizes[j], "red");//Height update
                 div_update(divs[j+1],div_sizes[j+1], "red");//Height update
             }
-            div_update(divs[j],div_sizes[j], "black");//Color updat
+            div_update(divs[j],div_sizes[j], "pink");//Color updat
         }
         div_update(divs[j],div_sizes[j], "blue");//Color update
     }
@@ -44,9 +39,3 @@ function Bubble()
     enable_buttons();
 }
 
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    
-    *****************
-*/
